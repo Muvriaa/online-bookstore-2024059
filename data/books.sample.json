@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "isbn": "9780000000011",
+    "title": "SQL for Beginners",
+    "author": "A. Smith",
+    "description": "Learn relational databases and SQL fundamentals with practical exercises.",
+    "price_cents": 1999,
+    "stock": 3
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "isbn": "9780000000012",
+    "title": "Database Design",
+    "author": "B. Lee",
+    "description": "Learn database normalization, primary keys, foreign keys, ER modeling, and transactions.",
+    "price_cents": 2499,
+    "stock": 2
+  },
+  {
+    "id": 3,
+    "category_id": 2,
+    "isbn": "9780000000013",
+    "title": "Introduction to AI",
+    "author": "C. Kim",
+    "description": "An accessible introduction to machine learning and artificial intelligence.",
+    "price_cents": 2299,
+    "stock": 5
+  },
+  {
+    "id": 4,
+    "category_id": 2,
+    "isbn": "9780000000014",
+    "title": "Practical RAG",
+    "author": "D. Chen",
+    "description": "Build semantic search systems with vector databases and large language models.",
+    "price_cents": 2999,
+    "stock": 4
+  },
+  {
+    "id": 5,
+    "category_id": 3,
+    "isbn": "9780000000015",
+    "title": "TypeScript Projects",
+    "author": "E. Brown",
+    "description": "Develop practical backend applications using TypeScript and APIs.",
+    "price_cents": 2099,
+    "stock": 5
+  },
+  {
+    "id": 6,
+    "category_id": 1,
+    "isbn": "9780000000016",
+    "title": "Distributed Data Systems",
+    "author": "F. Park",
+    "description": "Understand consistency, concurrency, transactions, and distributed database applications.",
+    "price_cents": 3499,
+    "stock": 1
+  }
+]
