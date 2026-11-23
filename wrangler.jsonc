@@ -1,7 +1,13 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "online-bookstore-starter",
-  "main": "src/index.ts",
-  "compatibility_date": "2026-11-19",
-  "d1_databases": []
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "online-bookstore-starter",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-11-19",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "bookstore-db",
+			"database_id": "e0e52511-d941-48e4-8c05-6c039141e76d"
+		}
+	]
 }
