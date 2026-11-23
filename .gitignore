@@ -15,8 +15,8 @@ IDENTITY.md
 TOOLS.md
 HEARTBEAT.md
 BOOTSTRAP.md
-MEMORY.md
-memory/
+/MEMORY.md
+/memory/
 
 # OpenClaw workspace files (AGENTS.md is committed)
 SOUL.md
@@ -25,6 +25,6 @@ IDENTITY.md
 TOOLS.md
 HEARTBEAT.md
 BOOTSTRAP.md
-MEMORY.md
-memory/
+/MEMORY.md
+/memory/
 docs/llm-wiki/.obsidian/workspace.json
