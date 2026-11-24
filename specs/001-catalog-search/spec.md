@@ -112,6 +112,15 @@ Customers, orders, purchases, courses, and course-book relationships are not ent
 
 Verification requires real npx vitest run execution and local D1 SQL checks, including direct attempts to violate relational constraints. Results are currently **Not verified**.
 
+## Clarifications
+
+### Session 2026-11-23 — approved before planning
+
+1. **Trimming and storage (FR-004/005/007/008)**: Use JavaScript `String.prototype.trim()` semantics for title, author, category name, and q. Store title, author, and category name trimmed; preserve description whitespace. Length limits count Unicode code points, not UTF-16 code units.
+2. **NUL (FR-004/005/006/008)**: Reject U+0000 in text fields and query text, including description, so database text-length checks cannot be bypassed by an embedded NUL.
+3. **Safe integers and large pages (FR-003/004/008)**: IDs (including category_id) and pagination values must be positive JavaScript safe integers (at most 9,007,199,254,740,991); the existing page_size maximum of 100 still applies. Calculate offsets exactly, including products beyond the safe-integer range, and return an empty page when the offset is beyond the matching results.
+4. **Enforcement boundary (FR-003/006)**: The database enforces stored-value integrity. Original JSON types and generated-ID-only creation are enforced by the API; SQLite affinity cannot establish the original JSON type. Automatically generated IDs are not reused after deletion. Explicit direct-SQL reuse of a deleted ID is unauthorized, not an additional database historical-ID ledger requirement.
+
 ## Assumptions
 
 ### Approved Decisions
